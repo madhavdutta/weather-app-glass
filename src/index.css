@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 min-h-screen font-sans antialiased;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 shadow-xl;
+  }
+  
+  .glass-dark {
+    @apply backdrop-blur-md bg-black/10 border border-white/10 shadow-xl;
+  }
+  
+  .weather-gradient-sunny {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+  }
+  
+  .weather-gradient-cloudy {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  }
+  
+  .weather-gradient-rainy {
+    background: linear-gradient(135deg, #636e72 0%, #2d3436 100%);
+  }
+  
+  .weather-gradient-snowy {
+    background: linear-gradient(135deg, #ddd6fe 0%, #a78bfa 100%);
+  }
+}
